@@ -26,6 +26,24 @@ public class Main {
         Scanner valorMenu = new Scanner(System.in);
         byte numeroValor = valorMenu.nextByte();
 
+        do {
+            switch (numeroValor){
+
+                case (1):
+                    System.out.println("------------------Datos primitivos--------------------");
+                    System.out.println("");
+                    break;
+                case (2):
+                    break;
+
+
+
+            }
+
+        } while (numeroValor == 10);
+
+
+
 
 
 
