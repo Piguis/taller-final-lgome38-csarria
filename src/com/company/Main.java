@@ -16,7 +16,7 @@ public class Main {
         System.out.println("3. Constante.");
         System.out.println("4. Tipo de Operadores.");
         System.out.println("5. Condicional IF, ELSE, IF ELSE.");
-        System.out.println("6. Condicional Switch.);
+        System.out.println("6. Condicional Switch.");
         System.out.println("7. Condicional ternaria.");
         System.out.println("8. Bucle Do WHILE.");
         System.out.println("9. Bucle WHILE.");
