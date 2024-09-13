@@ -29,35 +29,12 @@ public class Main {
             System.out.println("-------------------------------------------------");
             System.out.println("Ingresa un numero para ver el contenido: ");
 
-<<<<<<< HEAD
-        System.out.println("------------------Menu Taller--------------------");
-        System.out.println("1. Datos primitivos.");
-        System.out.println("2. String.");
-        System.out.println("3. Constante.");
-        System.out.println("4. Tipo de Operadores.");
-        System.out.println("5. Condicional IF, ELSE, IF ELSE.");
-        System.out.println("6. Condicional Switch.");
-        System.out.println("7. Condicional ternaria.");
-        System.out.println("8. Bucle Do WHILE.");
-        System.out.println("9. Bucle WHILE.");
-        System.out.println("10. Bucle FOR.");
-        System.out.println("0. Salir");
-
-
-        System.out.println("-------------------------------------------------");
-        System.out.println("Ingresa un numero para ver el contenido: ");
-        Scanner valorMenu = new Scanner(System.in);
-        byte numeroValor = valorMenu.nextByte();
-
-=======
             Scanner valorMenu = new Scanner(System.in);
             numeroValor = valorMenu.nextByte();
 
             switch (numeroValor) {
 
                 case (1):
->>>>>>> 8a3d07c3554361fb268e2358341d244ab39ac790
-
 
                     do {
                     System.out.println("------------------Datos primitivos--------------------");
@@ -90,6 +67,7 @@ public class Main {
 
                             valorMenu.nextLine(); // Captura el salto de línea restante
                             valorMenu.nextLine(); // Espera a que el usuario presione Enter
+                            break;
 
                         case(2):
                             System.out.println("------------------¿Qué es un dato tipo Int?--------------------");
@@ -103,6 +81,7 @@ public class Main {
 
                             valorMenu.nextLine(); // Captura el salto de línea restante
                             valorMenu.nextLine(); // Espera a que el usuario presione Enter
+                            break;
 
                         case(3):
                             System.out.println("------------------¿Qué es un dato tipo Long?--------------------");
@@ -116,19 +95,49 @@ public class Main {
 
                             valorMenu.nextLine(); // Captura el salto de línea restante
                             valorMenu.nextLine(); // Espera a que el usuario presione Enter
+                            break;
 
                     }
                     break;
 
                     }while (numeroMenuPrimitivo == 8);
-
-
-                case (2):
                     break;
 
 
+                case (2):
+
+                        System.out.println("----------String-----------");
+                        System.out.println("En Java, los String son un objeto el cual nos permite almacenar muchos caracteres");
+                        System.out.println("Ejemplo: String mensaje = ´hola mundo´;");
+                        System.out.println("------------------------------------------------------");
+                        System.out.println("Presione Enter para continuar...");
+
+                        valorMenu.nextLine(); // Captura el salto de línea restante
+                        valorMenu.nextLine(); // Espera a que el usuario presione Enter
+
+                        break;
+
+
+                case (4):
+
+                    do {
+                        System.out.println("------------------Tipo de Operadores--------------------");
+                        System.out.println("------------------------------------------------------");
+                        System.out.println("1. Aritméticos");
+                        System.out.println("2. Relacionales");
+                        System.out.println("3. Logicos");
+                        System.out.println("4. Asignación");
+                        System.out.println("5. Incremento / Decremento");
+                        
+
+
+
+
             }
+                    while();
+                    break;
+
         }while (numeroValor <= 10) ;
 
     }
-}
+
