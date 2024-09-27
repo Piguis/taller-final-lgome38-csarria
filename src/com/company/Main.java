@@ -14,6 +14,8 @@ public class Main {
         byte numeroValor;
         byte numeroMenuCondicionales;
         byte numeroEjemploCondicionales;
+        byte numeroEjemploTernaria;
+        int numeroEjemploWhile;
 
         Scanner valorMenu = new Scanner(System.in);
 
@@ -47,7 +49,7 @@ public class Main {
 
                 case (1):
 
-                    //do {
+                    do {
                     System.out.println("------------------Datos primitivos--------------------");
                     System.out.println("------------------------------------------------------");
                     System.out.println("1. ¿Qué es un dato tipo Byte?");
@@ -192,11 +194,11 @@ public class Main {
                                 System.out.println("El numero ingresado no es permitido, vuelva a intentarlo:");
 
                             }
-
                     }
+
                     break;
 
-                   // } while (numeroMenuPrimitivo >= 10);
+                   } while (numeroMenuPrimitivo >= 10);
 
 
                 case (2):
@@ -309,7 +311,6 @@ public class Main {
                             System.out.println("System.out.println(\"Eres menor de edad, pa' afuera!!!\");");
                             System.out.println("}");
                             System.out.println("------------------------------------------------------");
-
                             System.out.println("-------------------------Ejemplo real-----------------------------");
                             System.out.println("Ingresa la edad: ");
                             Scanner ejemploElse = new Scanner(System.in);
@@ -347,7 +348,6 @@ public class Main {
                             System.out.println("}   else if (numeroEjemploCondicionales >=18 && numeroEjemploCondicionales <60){");
                             System.out.println("System.out.println(\"Eres adulto, puedes continuar\");");
                             System.out.println("}");
-
                             System.out.println("------------------------------------------------------");
                             System.out.println("-------------------------Ejemplo real-----------------------------");
                             System.out.println("Ingresa la edad:");
@@ -378,6 +378,87 @@ public class Main {
 
 
                     //} while (numeroMenuCondicionales >=5);
+
+                case (6):
+                    //Tema numero 6 del menu
+
+                    break;
+
+                case (7):
+                    System.out.println("------------------ Condicional Ternaria --------------------");
+                    System.out.println("------------------------------------------------------");
+                    System.out.println("Es una caracteristica que nos permite definir expresiones de manera concisa.");
+                    System.out.println("Se trata de una manera condensada de declaracion if else que tambien devuelven un valor");
+                    System.out.println("------------------------------------------------------------");
+                    System.out.println("Ejemplo:");
+                    System.out.println("byte numeroEjemploTernaria;");
+                    System.out.println();
+                    System.out.println("System.out.println(\"Ingresa la edad:\");");
+                    System.out.println("Scanner ejemploTernaria = new Scanner(System.in);");
+                    System.out.println("numeroEjemploTernaria = ejemploTernaria.nextByte();");
+                    System.out.println("String valorEdad = (numeroEjemploTernaria <=17) ? \"Menor de edad\" : \"Mayor de edad\";");
+                    System.out.println("System.out.println(\"La persona es:\" +valorEdad);");
+                    System.out.println("------------------------------------------------------------");
+                    System.out.println();
+                    System.out.println("-------------------------Ejemplo real-----------------------------");
+                    System.out.println("Ingresa la edad:");
+
+                    Scanner ejemploTernaria = new Scanner(System.in);
+                    numeroEjemploTernaria = ejemploTernaria.nextByte();
+
+                    String valorEdad = (numeroEjemploTernaria <=17) ? "Menor de edad" : "Mayor de edad";
+
+                    System.out.println("La persona es: " +valorEdad);
+                    System.out.println("------------------------------------------------------------");
+                    System.out.println("Presione Enter para continuar...");
+                    valorMenu.nextLine(); // Captura el salto de línea restante
+                    valorMenu.nextLine(); // Espera a que el usuario presione Enter
+                    break;
+
+                case (8):
+
+                    //Tema numero 8 del menu
+
+                case (9):
+                    System.out.println("------------------ Bucle While --------------------");
+                    System.out.println("------------------------------------------------------");
+                    System.out.println("Con el bucle While se puede ejecutar indicaciones hasta que se produzca una condicion de terminacion");
+                    System.out.println("------------------------------------------------------------");
+                    System.out.println("Ejemplo:");
+                    System.out.println();
+                    System.out.println("int numeroEjemploWhile;");
+                    System.out.println();
+                    System.out.println("do {");
+                    System.out.println("System.out.println(\"Ingresa un numero permitido del 0 al 100 para iniciar el contador:\");");
+                    System.out.println("Scanner ejemploWhile = new Scanner(System.in);");
+                    System.out.println("numeroEjemploWhile = ejemploWhile.nextInt();");
+                    System.out.println();
+                    System.out.println("} while (numeroEjemploWhile >=101);");
+                    System.out.println("while (numeroEjemploWhile <= 100) {");
+                    System.out.println("System.out.println(\"El valor actual es:\" + numeroEjemploWhile);");
+                    System.out.println("numeroEjemploWhile++;");
+                    System.out.println("}");
+                    System.out.println("------------------------------------------------------------");
+                    System.out.println();
+                    //Ejemplo real:
+                    System.out.println("-------------------------Ejemplo real-----------------------------");
+                    do {
+                        System.out.println("Ingresa un numero permitido del 0 al 100 para iniciar el contador:");
+                        Scanner ejemploWhile = new Scanner(System.in);
+                        numeroEjemploWhile = ejemploWhile.nextInt();
+
+                    } while (numeroEjemploWhile >=101);
+
+                    while (numeroEjemploWhile <= 100) {
+                            System.out.println("El valor actual es:" + numeroEjemploWhile);
+                            numeroEjemploWhile++;
+                        }
+                    System.out.println("------------------------------------------------------------");
+                    System.out.println("Presione Enter para continuar...");
+                    valorMenu.nextLine(); // Captura el salto de línea restante
+                    valorMenu.nextLine(); // Espera a que el usuario presione Enter
+                    break;
+
             }
             //Condicion por si el usuario agrega un valor incorrecto de seleccion en el menu principal
             if (numeroValor >= 12){
