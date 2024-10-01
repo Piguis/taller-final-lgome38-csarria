@@ -87,10 +87,7 @@ public class Main {
                             valorMenu.nextLine(); // Captura el salto de línea restante
                             valorMenu.nextLine(); // Espera a que el usuario presione Enter
                             break;
-<<<<<<< HEAD
-=======
 
->>>>>>> d8514c55a384147ed288bc2c0d20d17d0a2830ec
 
                         case(2):
                             System.out.println("------------------¿Qué es un dato tipo Short?--------------------");
@@ -135,8 +132,6 @@ public class Main {
                             valorMenu.nextLine(); // Captura el salto de línea restante
                             valorMenu.nextLine(); // Espera a que el usuario presione Enter
                             break;
-<<<<<<< HEAD
-=======
 
                         case (5):
                             System.out.println("------------------¿Qué es un dato tipo Float?--------------------");
@@ -213,7 +208,7 @@ public class Main {
                    // } while (numeroMenuPrimitivo >= 10);
 
 
-                case (2)
+                case (2):
 
                     System.out.println("----------String-----------");
                     System.out.println("En Java, los String son un objeto el cual nos permite almacenar muchos caracteres");
@@ -252,11 +247,11 @@ public class Main {
                         System.out.println("5. Incremento / Decremento");
 
                         Scanner numeroValorDatostipooperador = new Scanner(System.in);
-                        numeroMenutipooperador = numeroValortipooperador.nextByte();
+                        int opcion = numeroValorDatostipooperador.nextInt();
 
                         //Explicacion tipo de operadores aritmeticos mediante Switch
-                        switch (numeroMenutipooperador){
-                            case (1):
+                        switch (opcion){
+                            case 1:
                                 System.out.println("------------------Aritmetico--------------------");
                                 System.out.println("------------------------------------------------------");
                                 System.out.println("suman, restan dividen y multiplican dos cifras u operandos");
@@ -267,7 +262,7 @@ public class Main {
                                 valorMenu.nextLine(); // Espera a que el usuario presione Enter
                                 break;
 
-                            case (2):
+                            case 2:
                                 System.out.println("------------------Relacionales--------------------");
                                 System.out.println("------------------------------------------------------");
                                 System.out.println("== Boolean es igual--- comprueba que si los valores de dos operandos son iguales");
@@ -280,7 +275,7 @@ public class Main {
                                 valorMenu.nextLine(); // Espera a que el usuario presione Enter
                                 break;
 
-                            case (3):
+                            case 3:
                                 System.out.println("------------------Logicos--------------------");
                                 System.out.println("------------------------------------------------------");
                                 System.out.println("---&& ");
@@ -290,22 +285,20 @@ public class Main {
                                 valorMenu.nextLine(); // Captura el salto de línea restante
                                 valorMenu.nextLine(); // Espera a que el usuario presione Enter
                                 break;
-<<<<<<< HEAD
-                                    =======
 
->>>>>>> d8514c55a384147ed288bc2c0d20d17d0a2830ec
 
-                            case(2):
+
+
 
 
 
             }
-                    while();
+                    while(numeroValor <= 10);
                     break;
 
         }while (numeroValor <= 10) ;
-=======
-                    System.out.println("El valor base de la casa es de: $"+valorBase);
+
+           System.out.println("El valor base de la casa es de: $"+valorBase);
 
                     System.out.println("------------------------------------------------------");
                     System.out.println("Presione Enter para continuar...");
@@ -479,7 +472,8 @@ public class Main {
 
         //Condicion de bucle para que el usuario vuelva a escribir un valor valido en el menu principal
         }while (numeroValor >= 12);
->>>>>>> d8514c55a384147ed288bc2c0d20d17d0a2830ec
+
 
     }
+}
 
